@@ -1,0 +1,195 @@
+/* * {
+  outline: 1px solid red;
+} */
+
+main {
+  background-color: #141f2b;
+  background-image: url(../png/goldline.png);
+  background-repeat: no-repeat;
+}
+
+#order {
+  background-color: #141f2b;
+  height: 1145px;
+}
+
+.navbar {
+  height: 150px;
+  background-color: #002a4c;
+}
+
+.footer {
+  height: 205px;
+  background-color: #002a4c;
+}
+
+.topname {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.topname p {
+  width: 350px;
+  border-bottom: 5px solid orange;
+  margin: 0 auto;
+}
+
+.card1 {
+  height: 282px;
+  background-color: #000;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.card2 {
+  height: 282px;
+  background-color: #000;
+  align-items: center;
+  -webkit-filter: brightness(0.1);
+}
+
+.noshow {
+  color: #ff5172;
+  position: absolute;
+  top: 7rem;
+  left: 30rem;
+  z-index: 1;
+  font-size: 100px;
+  border: 3px solid #ff5172;
+  padding: 0 5rem;
+  -moz-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-5deg);
+}
+
+.date {
+  padding-right: 30px;
+  margin-left: 20px;
+}
+
+.date-text {
+  color: white;
+  font-size: 30px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.name {
+  color: white;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  margin-left: 5rem;
+}
+
+.name h1 {
+  font-size: 30px;
+}
+
+.answer {
+  color: white;
+  display: flex;
+  padding: 200px 0 0 0;
+}
+
+.textbox1 p {
+  color: #ff8d00;
+  border: 1px solid #ff8d00;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  height: 30px;
+  margin: 0 20px;
+}
+
+.textbox2 {
+  background-color: #ff8d00;
+  width: 100px;
+  border-radius: 10px;
+  height: 30px;
+  text-align: center;
+  margin-left: 100px;
+}
+
+.textbox2 p {
+  color: white;
+  border: 1px solid #ff8d00;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* ---------------------RWD */
+
+@media screen and (max-width: 414px) {
+  main {
+    background-image: none !important;
+  }
+
+  .mainblock {
+    width: 100% !important;
+  }
+
+  .navbar {
+    height: 75px;
+  }
+
+  .date-text {
+    font-size: 20px;
+  }
+
+  .photo {
+    display: none;
+  }
+
+  .topname p {
+    font-size: 20px;
+    width: 120px;
+  }
+
+  .card1 {
+    height: 169px;
+    position: relative;
+  }
+
+  .card2 {
+    padding: 20px 0 !important;
+  }
+
+  .name h1 {
+    font-size: 20px;
+    width: 200px;
+    margin: 10px 0;
+  }
+
+  .name {
+    width: 100% !important;
+    margin-bottom: 60px;
+    padding-left: 10px;
+  }
+
+  .name p {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .date {
+    width: 200px;
+    font-size: 20px;
+    margin-left: 1px;
+  }
+
+  .date svg {
+    width: 82px;
+    height: 82px;
+  }
+
+  .answer {
+    position: absolute;
+    bottom: 20px;
+    left: 1px;
+    z-index: 1;
+  }
+}

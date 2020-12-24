@@ -1,0 +1,372 @@
+body {
+  background-color: #141f2b;
+  font-family: "Noto Sans TC", sans-serif;
+  color: #fff;
+  position: relative;
+}
+
+header {
+  height: 150px;
+  background: #002a4c;
+  z-index: 20;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 70px;
+}
+
+/* 進度條 */
+.progress-area {
+  display: flex;
+  justify-content: center;
+}
+
+.progress-line {
+  background-color: transparent;
+  margin: 38px;
+}
+.progress-line p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.glass-position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.glass {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.animate-position {
+  position: absolute;
+  top: 18px;
+  left: 270.59px;
+  width: 47px;
+  height: 27px;
+  border-radius: 0 0 27px 27px;
+  overflow: hidden;
+}
+.animate-position1 {
+  position: absolute;
+  top: 21px;
+  left: 184px;
+  width: 84px;
+  height: 27px;
+  border-radius: 0 0 27px 27px;
+  overflow: hidden;
+}
+.animate-position2 {
+  position: absolute;
+  top: 20.8px;
+  left: 2.5px;
+  width: 85px;
+  height: 27px;
+  border-radius: 0 0 27px 27px;
+  overflow: hidden;
+}
+.animate-position3 {
+  position: absolute;
+  top: 19px;
+  left: 136.6px;
+  width: 85px;
+  height: 27px;
+  border-radius: 0 0 27px 27px;
+  overflow: hidden;
+}
+.animate-position4 {
+  position: absolute;
+  top: 21px;
+  left: 51.9px;
+  width: 83px;
+  height: 27px;
+  border-radius: 0 0 27px 27px;
+  overflow: hidden;
+}
+
+.fix-yellow {
+  display: inline-block;
+  background-color: #ffd700;
+  width: 47px;
+  height: 27px;
+  border-radius: 0 0 27px 27px;
+  position: absolute;
+}
+
+.top {
+  display: inline-block;
+  background-color: #ffd700;
+  width: 47px;
+  height: 0px;
+  border-radius: 0 0 27px 27px;
+  animation-name: MoveUp; /*動畫名稱，需與 keyframe 名稱對應*/
+  animation-duration: 3s; /*動畫持續時間，單位為秒*/
+  animation-delay: 3s; /*動畫延遲開始時間*/
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes MoveUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0.5;
+    height: 0px;
+  }
+  to {
+    opacity: 1;
+    height: 60px;
+  }
+}
+
+.fix-line {
+  background-color: #ffd700;
+  width: 85px;
+  height: 5px;
+  position: absolute;
+  display: inline-block;
+}
+
+.line {
+  background-color: #ffd700;
+  width: 0px;
+  height: 5px;
+  position: absolute;
+  display: inline-block;
+  animation-name: MoveToRight; /*動畫名稱，需與 keyframe 名稱對應*/
+  animation-duration: 3s; /*動畫持續時間，單位為秒*/
+  animation-delay: 1s; /*動畫延遲開始時間*/
+  animation-fill-mode: forwards;
+}
+
+@keyframes MoveToRight {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/*  */
+
+.title-40M {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.title-30 {
+  font-size: 30px;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+
+.text-30L {
+  font-size: 30px;
+  font-weight: 300;
+}
+.text-40B {
+  font-size: 40px;
+  font: weight 700;
+}
+
+/*  */
+
+.leftarea {
+  justify-content: center;
+}
+.info {
+  margin-left: 50px;
+}
+
+.shop-info {
+  /* margin-left: 360px; */
+  padding-left: 0px;
+}
+
+/* 付款成功打勾勾 */
+
+.success-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.circle {
+  stroke-dasharray: 1194;
+  stroke-dashoffset: 1194;
+  animation: circle 1.5s ease-in-out;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes circle {
+  from {
+    opacity: 0;
+    stroke-dashoffset: 1194;
+  }
+  to {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+
+.tick {
+  stroke-dasharray: 350;
+  stroke-dashoffset: 350;
+  animation: tick 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@keyframes tick {
+  from {
+    stroke-dashoffset: 350;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.successful {
+  opacity: 0;
+  animation: text 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2.6s;
+}
+
+@keyframes text {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*  */
+
+.order-info {
+  margin-top: 48px;
+}
+
+/* 金線 */
+
+.golden-line1 {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  background: url(../img/golden-line1.png);
+  background-size: 51%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.golden-line2 {
+  position: absolute;
+  top: 725px;
+  left: 1310px;
+  background: url(../img/golden-line2.png);
+  background-repeat: no-repeat;
+  width: 31%;
+  height: 40%;
+  z-index: -1;
+}
+
+/* footer-area */
+footer {
+  margin-top: 150px;
+  height: 205px;
+  background: #002a4c;
+}
+
+/*  */
+
+@media (min-width: 768px) {
+  .phone {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .web {
+    display: none;
+  }
+
+  header {
+    height: 80px;
+  }
+
+  footer {
+    height: 190px;
+  }
+
+  .progress-line {
+    margin: 35px 40px 20px 40px;
+  }
+  .progress-line p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .leftarea {
+  }
+
+  .success-text1 {
+    margin-top: 30px;
+    font-size: 30px;
+  }
+  .success-text2 {
+    font-size: 16px;
+  }
+
+  .shop-name {
+    font-size: 24px;
+  }
+
+  .address,
+  .phone-number {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
+  .shop-info {
+    margin-left: 0px;
+
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .order-info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .order-info p {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+}

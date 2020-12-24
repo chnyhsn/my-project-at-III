@@ -1,0 +1,416 @@
+/* * {
+  outline: 1px solid red;
+} */
+
+body {
+  background-color: #141f2b;
+  z-index: 1;
+}
+
+.header {
+  height: 75px;
+}
+
+#Member-Centre {
+  background-color: #141f2b;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 1000px;
+  background-image: url(../png/會員中心.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.goldline {
+  background-image: url(../png/會員中心.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1000px;
+}
+
+/* ------------------------- top area */
+
+.top-area {
+  width: 100%;
+  margin-bottom: 170px;
+  margin-top: 70px;
+}
+
+.name2 img {
+  margin-left: 50px;
+}
+
+.name2 p {
+  color: white;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  width: 120px;
+  text-align: center;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.name2svg {
+  width: 33px;
+}
+
+.nametop {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 30px;
+  color: white;
+  font-weight: 300;
+}
+
+.namebottom {
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.out {
+  margin-left: 8rem;
+  display: flex;
+}
+
+.out p {
+  color: white;
+  font-size: 30px;
+}
+
+.out svg {
+  margin-top: 8px;
+}
+
+/* ------------------------- bootom area */
+
+.bottom-area {
+  width: 1440px;
+  height: 400px;
+  border-top: 2px solid white;
+}
+
+.bottom-text {
+  align-items: center;
+}
+
+.bottom-word {
+  color: white;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  width: 200px;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  width: 500px;
+}
+
+.black-area {
+  background-color: rgba(10, 10, 10, 0.932);
+  width: 640px;
+  height: 190px;
+  margin: 0 auto;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+.black-area p {
+  margin-left: 20px;
+}
+.black-area svg {
+  opacity: 0.5;
+}
+
+.black-area img {
+  opacity: 0.5;
+}
+
+.black-text h1 {
+  color: #658eaf;
+  font-weight: 100;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  padding: 25px 0 50px 25px;
+  height: 0;
+}
+
+.black-text2 p {
+  color: white;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.aboutme1 p {
+  color: white;
+  font-size: 30px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+  margin-right: 3rem;
+  padding: 0 3rem;
+}
+
+.aboutme2 {
+  color: white;
+  font-size: 30px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+  border-bottom: 5px solid #ff8d00;
+  width: 180px;
+  padding-left: 25px;
+}
+
+.aboutme2 a {
+  color: white;
+  text-decoration: none;
+}
+
+.change {
+  color: white;
+  font-size: 30px;
+  margin-left: 41rem;
+}
+
+.change svg {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.star p {
+  color: white;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.b-left-area {
+  margin-top: 20px;
+  overflow-x: hidden;
+  overflow: scroll;
+}
+
+.b-left-text h2 {
+  color: red;
+  padding-left: 80px;
+}
+
+.black-text {
+  color: white;
+}
+
+.black-text p {
+  color: white;
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.black-text h2 {
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.error {
+  position: absolute;
+  bottom: 0.1px;
+  right: 50px;
+}
+
+.errorp p {
+  position: absolute;
+  bottom: 55px;
+  right: 60px;
+  font-size: 40px;
+  color: #ff5172;
+  -moz-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-18deg);
+}
+
+/* --------------------------- footer */
+
+.foot {
+  height: 205px;
+  background-color: #002a4c;
+}
+
+/* ---------------------------- RWD */
+
+@media (min-width: 415px) {
+  .phone {
+    display: none;
+  }
+}
+
+@media (max-width: 414px) {
+  #Member-Centre {
+    height: 1200px;
+  }
+
+  .header {
+    height: 80px;
+  }
+
+  .web {
+    display: none;
+  }
+
+  .big-area {
+    margin: auto;
+  }
+
+  .top-area {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .black-area {
+    background-color: rgba(10, 10, 10, 0.932);
+    /* width: 500px;
+    height: 185px; */
+    display: flex;
+    margin-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user {
+    text-align: center;
+  }
+
+  .name2 {
+    justify-content: center;
+  }
+
+  .name2 img {
+    width: 50px;
+    margin-left: 0;
+  }
+
+  .name2 p {
+    width: 90px;
+  }
+
+  .photo {
+    text-align: center;
+  }
+
+  .aboutme1 p {
+    font-size: 20px;
+  }
+
+  .aboutme2 {
+    font-size: 20px;
+    margin-left: 10px;
+    width: 120px;
+    padding-left: 18px;
+  }
+
+  .aboutme2 p {
+    font-size: 20px !important;
+  }
+
+  .bottom-word p {
+    width: 70px;
+    font-size: 16px;
+  }
+
+  .text p {
+    font-size: 16px;
+  }
+
+  .change {
+    margin-left: 20px;
+  }
+
+  .bottom-text {
+    padding: 0;
+  }
+
+  .out {
+    margin-left: 230px;
+    padding-top: 10px;
+  }
+
+  .out p {
+    font-size: 20px;
+  }
+
+  .out svg {
+    width: 20px;
+    margin: 0;
+  }
+
+  .change p {
+    width: 50px;
+    font-size: 20px;
+  }
+
+  .change svg {
+    margin: 0;
+    margin-right: 5px;
+    width: 20px;
+  }
+
+  .bottom-area {
+    flex-direction: column;
+    height: 100px;
+  }
+
+  .foot {
+    margin-top: 500px;
+  }
+
+  .black-area svg {
+    display: none;
+  }
+
+  .black-area img {
+    width: 100px;
+    height: 75px;
+  }
+
+  .black-area {
+    width: 400px;
+    height: 150px;
+    padding: 0;
+  }
+
+  .star p {
+    color: white;
+    text-align: center;
+  }
+
+  .star {
+    text-align: center;
+  }
+
+  .black-text h2 {
+    margin-bottom: 10px;
+  }
+
+  .black-text p {
+    margin-bottom: 10px;
+  }
+
+  .error img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .errorp p {
+    position: absolute;
+    font-size: 30px;
+    bottom: 35px;
+    right: 55px;
+  }
+}

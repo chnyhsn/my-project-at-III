@@ -1,0 +1,170 @@
+body {
+  overflow-x: hidden;
+}
+
+.about {
+  width: 100%;
+  height: 135px;
+  background-color: #002a4c;
+  padding-top: 10px;
+}
+.aboutbox {
+  width: 75%;
+  margin: 0 auto;
+}
+.aboutrow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footerlogo {
+  width: 8%;
+  padding-top: 5px;
+}
+.footerlogo img {
+  height: 77px;
+}
+.aboutitem {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  width: 80%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 0;
+  padding: 0;
+}
+.aboutitem il {
+  width: 15%;
+  padding: 8px 40px 0 0px;
+  text-align: center;
+  cursor: pointer;
+}
+.contact {
+  border-right: solid 1px white;
+}
+.abgobar {
+  border-right: solid 1px white;
+}
+.cooper {
+  border-right: solid 1px white;
+}
+.cooperlink:link,
+.cooperlink:visited,
+.cooperlink:hover,
+.cooperlink:active {
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
+.server {
+  border-right: solid 1px white;
+}
+
+.community {
+  width: 220px;
+  margin: 20px 0 0;
+  display: flex;
+}
+.community il {
+  width: 73px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+.community il img {
+  height: 25px;
+}
+.copyright {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  color: #658eaf;
+  text-align: center;
+  padding-top: 10px;
+}
+.ban {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+}
+.banrow {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding-top: 10px;
+}
+h3 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  padding: 0px 100px 0;
+}
+.banimg img {
+  width: 58px;
+}
+
+@media (max-width: 767px) {
+  .about {
+    height: 150px;
+    padding-top: 0px;
+  }
+  .aboutbox {
+    padding-top: 0px;
+  }
+  .aboutrow {
+    flex-direction: column-reverse;
+  }
+  .footerlogo {
+    display: none;
+  }
+  .aboutitem {
+    font-size: 16px;
+    font-weight: 100;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .aboutitem il {
+    width: 80px;
+    border: none;
+    padding: 5px 0;
+  }
+  .contact {
+    text-align: left;
+  }
+  .cooper {
+    text-align: right;
+  }
+
+  .community {
+    margin: 5px auto 0;
+  }
+  .community il {
+    justify-content: center;
+  }
+  .copyright {
+    font-size: 12px;
+    line-height: 3;
+  }
+  .ban {
+    height: 40px;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0px 0 0;
+  }
+  .banrow {
+    padding-top: 5px;
+  }
+  .banimg img {
+    width: 30px;
+    margin: 0 10px 0;
+  }
+}

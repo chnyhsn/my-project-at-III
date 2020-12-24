@@ -1,0 +1,287 @@
+a {
+  text-decoration: none;
+}
+
+.header {
+  height: 100px;
+}
+
+main {
+  background-color: #141f2b;
+  background-image: url(../png/我的訂單.png);
+  background-repeat: no-repeat;
+}
+
+.mainblock {
+  width: 75%;
+}
+
+#order {
+  background-color: #141f2b;
+  height: 1145px;
+}
+
+.navbar1 {
+  height: 150px;
+  background-color: #002a4c;
+}
+
+.footer {
+  height: 205px;
+  background-color: #002a4c;
+}
+
+.topname {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+.topname a :hover {
+  text-decoration: none;
+  border-bottom: 5px solid orange;
+}
+
+.topname p {
+  color: white;
+  width: 350px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.topname1 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.topname1 p {
+  color: white;
+  width: 350px;
+  margin: 0 auto;
+  border-bottom: 5px solid orange;
+}
+
+.card1 {
+  height: 282px;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: rgb(0, 0, 0);
+  -webkit-filter: brightness(0.5);
+}
+.black {
+  height: 282px;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: rgb(0, 0, 0);
+  -webkit-filter: brightness(0.5);
+}
+
+.card2 {
+  height: 282px;
+  background-color: rgba(10, 10, 10, 0.932);
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.date {
+  padding-left: 30px;
+  margin-left: 20px;
+}
+
+.date svg {
+  margin-left: 15px;
+}
+
+.date-text {
+  color: white;
+  font-size: 30px;
+  font-family: "Noto Sans TC", sans-serif;
+  padding-left: 30px;
+}
+
+.name {
+  color: white;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  margin-left: 5rem;
+}
+
+.name h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.name p {
+  margin-bottom: 10px;
+}
+
+.answer {
+  color: white;
+  display: flex;
+  padding: 200px 0 0 0;
+}
+
+.textbox1 p {
+  color: #ff8d00;
+  border: 1px solid #ff8d00;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  height: 30px;
+  margin: 0 20px;
+}
+
+.textbox2 {
+  background-color: #ff8d00;
+  width: 100px;
+  border-radius: 10px;
+  height: 30px;
+  text-align: center;
+  margin-left: 100px;
+}
+
+.textbox2 p {
+  color: white;
+  border: 1px solid #ff8d00;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.card-area {
+  overflow-y: hidden;
+  /* overflow: scroll; */
+}
+
+.img-ink img {
+  position: absolute;
+  bottom: 1px;
+  right: 200px;
+}
+
+.noshowtext p {
+  color: #ff5172;
+  font-size: 50px;
+  -moz-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-18deg);
+  position: absolute;
+  top: 95px;
+  right: 230px;
+}
+
+@media screen and (max-width: 414px) {
+  .header {
+    height: 80px;
+  }
+
+  main {
+    background-image: none !important;
+  }
+
+  .mainblock {
+    width: 100% !important;
+  }
+
+  .navbar {
+    height: 75px;
+  }
+
+  .topname {
+    margin: 40px 0;
+  }
+
+  .topname1 {
+    margin: 40px 0;
+  }
+
+  .date-text {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+
+  .photo {
+    display: none;
+  }
+
+  .topname p {
+    color: white;
+    font-size: 20px;
+    width: 120px;
+  }
+
+  .topname1 p {
+    color: white;
+    font-size: 20px;
+    width: 120px;
+  }
+
+  .card1 {
+    height: 169px;
+    position: relative;
+  }
+
+  .card2 {
+    height: 169px;
+    position: relative;
+  }
+
+  .card-area {
+    padding: 10px 0 !important;
+  }
+
+  .name h1 {
+    font-size: 16px;
+    width: 200px;
+    margin: 10px 0;
+  }
+
+  .name {
+    width: 100% !important;
+    margin-bottom: 60px;
+    padding-left: 30px;
+  }
+
+  .name p {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .date {
+    width: 200px;
+    font-size: 20px;
+    margin-left: 1px;
+  }
+
+  .date svg {
+    width: 82px;
+    height: 82px;
+    margin-left: 5px;
+  }
+
+  .answer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1;
+  }
+
+  .img-ink img {
+    width: 150px;
+    height: 150px;
+    left: 5px;
+  }
+
+  .noshowtext p {
+    font-size: 30px;
+    top: 70px;
+  }
+
+  .textbox2 {
+    margin-left: 125px;
+  }
+}

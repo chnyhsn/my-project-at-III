@@ -1,0 +1,381 @@
+body {
+  background-color: #141f2b;
+  font-family: "Noto Sans TC", sans-serif;
+
+  /* outline: 1px solid red; */
+}
+
+header {
+  height: 150px;
+  background: #002a4c;
+  z-index: 20;
+}
+
+button:focus {
+  outline: transparent;
+}
+
+/*取消訂位 modal */
+
+.warning {
+  margin: 30px 20px 0 20px;
+  font-size: 18px;
+}
+
+.modal-dialog {
+  pointer-events: auto;
+}
+
+.modal-content2 {
+  height: 370px;
+  width: 500px;
+  border: 10px solid #ff5172;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.modal-body2 img {
+  margin-top: 45px;
+}
+
+.modal-body2 p {
+  color: #ff5172;
+  /* margin-top: 10px; */
+}
+
+.modal-body2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.agree-btn {
+  color: #fff;
+  background-color: #ff5172;
+  border-radius: 12px;
+  height: 35px;
+  width: 100px;
+  border: none;
+  margin: 0px 15px;
+}
+
+.disagree-btn {
+  color: #ff5172;
+  background-color: #fff;
+  border-radius: 12px;
+  height: 35px;
+  width: 100px;
+  border: 2px solid #ff5172;
+  margin: 0px 15px;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 55px;
+}
+
+/* 進度條 */
+.progress-area {
+  display: flex;
+  justify-content: center;
+}
+
+.progress-line {
+  background-color: transparent;
+  margin: 38px;
+}
+.progress-line p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.glass-position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.glass {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.animate-position {
+  position: absolute;
+  top: 20px;
+  left: 2.6px;
+  width: 47px;
+  height: 27px;
+  border-radius: 0 0 27px 27px;
+  overflow: hidden;
+}
+
+.top {
+  display: inline-block;
+  background-color: #ffd700;
+  width: 47px;
+  height: 0px;
+  border-radius: 0 0 27px 27px;
+
+  animation-name: MoveUp; /*動畫名稱，需與 keyframe 名稱對應*/
+  animation-duration: 3s; /*動畫持續時間，單位為秒*/
+  animation-delay: 3s; /*動畫延遲開始時間*/
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes MoveUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0.5;
+    height: 0px;
+  }
+  to {
+    opacity: 1;
+    height: 60px;
+  }
+}
+
+/* text */
+
+.title-20B {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.title-40M {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 47px;
+}
+
+.title-30 {
+  color: #fff;
+  font-size: 30px;
+}
+
+/* form area */
+.order-form {
+  flex-direction: column;
+  margin-right: 48px;
+}
+.order-form p,
+option {
+  color: #000;
+}
+
+.input-area2 {
+  display: flex;
+  background-color: #fff;
+  height: 50px;
+  margin: 50px 0 50px 50px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.inputbox {
+  border: none;
+  width: 64%;
+  height: 50px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 5px;
+  /* position: relative; */
+  border-radius: 5px;
+  transform: translateX(20px);
+}
+
+.from-text {
+  color: #000;
+  font-size: 20px;
+  font-weight: 300;
+}
+.from-text p {
+  margin-bottom: 0px;
+  margin-top: 4px;
+  margin-left: 3px;
+}
+.from-text span {
+  font-size: 25px;
+  color: #537793;
+}
+
+.text-area {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.text-area textarea {
+  border-radius: 5px;
+  color: #000;
+  font-weight: 300;
+  width: 100%;
+}
+
+.label-text label {
+  padding-left: 50px;
+  color: #ff5172;
+}
+
+.next-btn {
+  /* margin-left: 55px; */
+  margin-top: 50px;
+  color: #fff;
+  background-color: #ff8d00;
+  border-radius: 12px;
+  width: 100%;
+  height: 35px;
+  border: none;
+}
+
+.next-btn2 {
+  margin-top: 17px;
+}
+
+/* 金線 */
+
+.golden-line1 {
+  position: absolute;
+  transform: translate(-160px, -130px);
+  background: url(../img/golden-line1.png);
+  background-size: 51%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.golden-line2 {
+  position: absolute;
+  transform: translate(1330px, 600px);
+  background: url(../img/golden-line2.png);
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 52%;
+  z-index: -1;
+}
+
+/* 錯誤訊息 */
+.err {
+  color: #ff5172;
+  position: absolute;
+  top: 12.5px;
+  right: 10px;
+}
+.err i {
+  color: #ff5172;
+}
+
+#errormsg {
+  color: #ff5172;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#errormsg i {
+  color: #ff5172;
+}
+
+/* RWD */
+
+@media (min-width: 768px) {
+  .phone {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .web {
+    display: none;
+  }
+
+  header {
+    height: 80px;
+  }
+
+  footer {
+    height: 190px;
+  }
+
+  .progress-line {
+    margin: 35px 40px 20px 40px;
+  }
+  .progress-line p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  /*modal  */
+
+  .modal-content2 {
+    height: 430px;
+    border: 5px solid #ff5172;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  .modaltitle {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .modal-body2 img {
+    margin-top: 15px;
+    width: 70%;
+  }
+  .warning {
+    margin-left: 20px;
+  }
+  .agree-btn,
+  .disagree-btn {
+    margin: 10px 15px;
+  }
+
+  /*  */
+
+  .conent-area {
+    justify-content: center;
+  }
+
+  .phone-shop {
+    font-size: 24px;
+  }
+
+  .phone-from {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .order-form {
+    margin-right: 0px;
+  }
+
+  .input-area2 {
+    margin: 50px 0;
+  }
+
+  .label-text label {
+    padding-left: 0px;
+    font-size: 14px;
+  }
+
+  .from-text {
+    font-size: 16px;
+  }
+
+  .inputbox {
+    font-size: 16px;
+  }
+
+  .next-btn {
+    width: 100%;
+  }
+}

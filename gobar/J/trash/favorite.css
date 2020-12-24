@@ -1,0 +1,219 @@
+/* * {
+  outline: 1px solid red;
+} */
+
+body {
+  background-color: #141f2b;
+  z-index: 1;
+}
+
+#Member-Centre {
+  background-color: #141f2b;
+  width: 75%;
+  height: 1000px;
+  background-image: url(../png/會員中心.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.goldline {
+  background-image: url(../png/會員中心.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1000px;
+}
+
+/* ----------------------------navbar */
+
+.navbar {
+  height: 150px;
+  background-color: #002a4c;
+}
+
+/* ------------------------- top area */
+
+.top-area {
+  width: 1440px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.name2 img {
+  margin-left: 50px;
+}
+
+.name2 p {
+  color: white;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  width: 120px;
+  text-align: center;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.name2svg {
+  width: 33px;
+}
+
+.nametop {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 30px;
+  color: white;
+  font-weight: 300;
+}
+
+.namebottom {
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.out {
+  margin-left: 9rem;
+}
+
+.out p {
+  color: white;
+  font-size: 30px;
+}
+
+.out svg {
+  margin-top: 8px;
+}
+
+/* ------------------------- bootom area */
+
+.bottom-area {
+  width: 1440px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  border-top: 2px solid white;
+}
+
+.bottom-text {
+  align-items: center;
+}
+
+.bottom-word {
+  color: white;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  width: 120px;
+}
+
+.text {
+  color: #141f2b;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  width: 300px;
+}
+
+.black-area {
+  background-color: black;
+  width: 500px;
+  height: 185px;
+}
+
+.black-text h1 {
+  color: #658eaf;
+  font-weight: 100;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  padding: 25px 0 50px 25px;
+}
+
+.black-text2 p {
+  color: white;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.aboutme1 {
+  color: white;
+  font-size: 30px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+  border-bottom: 5px solid #ff8d00;
+  margin-right: 3rem;
+  padding: 0 3rem;
+}
+
+.aboutme2 {
+  color: white;
+  font-size: 30px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+}
+
+.change {
+  color: white;
+  font-size: 30px;
+  margin-left: 44rem;
+}
+
+.change svg {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+/* --------------------------- footer */
+
+.foot {
+  height: 205px;
+  background-color: #002a4c;
+}
+
+/* -------------------------------RWD */
+
+@media screen and (max-width: 414px) {
+  /* #Member-Centre {
+    height: 1000px;
+  } */
+
+  .top-area {
+    width: 300px;
+    flex-direction: column;
+  }
+
+  .name p {
+    width: 8rem;
+  }
+
+  .photo {
+    height: 200px;
+    width: 100px;
+  }
+
+  .photo svg {
+    margin-left: 80px;
+  }
+
+  .aboutme1 {
+    font-size: 20px;
+  }
+
+  .aboutme2 {
+    font-size: 20px;
+  }
+
+  .bottom-word p {
+    width: 200px;
+    font-size: 16px;
+  }
+
+  .text p {
+    font-size: 16px;
+  }
+
+  .change {
+    margin-left: 0;
+  }
+
+  .bottom-text {
+    padding: 0;
+  }
+}

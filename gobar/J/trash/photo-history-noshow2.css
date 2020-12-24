@@ -1,0 +1,111 @@
+@media screen and (max-width: 414px) {
+  main {
+    background-image: none !important;
+  }
+
+  .mainblock {
+    width: 100% !important;
+  }
+
+  .navbar {
+    height: 75px;
+  }
+
+  .date-text {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+
+  .photo {
+    display: none;
+  }
+
+  .topname p {
+    font-size: 20px;
+    width: 120px;
+  }
+
+  .topname1 {
+    margin-top: 40px;
+  }
+
+  .topname {
+    margin: 40px 0;
+  }
+
+  .topname1 p {
+    font-size: 20px;
+    width: 120px;
+  }
+
+  .card1 {
+    height: 169px;
+    position: relative;
+  }
+
+  .card2 {
+    height: 169px;
+    position: relative;
+  }
+
+  .card3 {
+    height: 169px;
+    position: relative;
+  }
+
+  .card4 {
+    height: 169px;
+    position: relative;
+  }
+
+  .card-area {
+    padding: 10px 0 !important;
+  }
+
+  .name h1 {
+    font-size: 20px;
+    width: 200px;
+    margin: 10px 0;
+  }
+
+  .name {
+    width: 100% !important;
+    margin-bottom: 60px;
+    padding-left: 30px;
+  }
+
+  .name p {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .date {
+    width: 200px;
+    font-size: 20px;
+    margin-left: 1px;
+  }
+
+  .date svg {
+    width: 82px;
+    height: 82px;
+    margin-left: 5px;
+  }
+
+  .answer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1;
+  }
+
+  .img-ink img {
+    width: 150px;
+    height: 150px;
+    left: 5px;
+  }
+
+  .noshowtext p {
+    font-size: 30px;
+    top: 70px;
+  }
+}

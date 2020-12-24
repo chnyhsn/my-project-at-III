@@ -1,0 +1,343 @@
+body {
+  background-color: #141f2b;
+  font-family: "Noto Sans TC", sans-serif;
+  background-image: url(../img/golden-line3.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 30%;
+  color: #fff;
+}
+
+header {
+  height: 150px;
+  background: #002a4c;
+  z-index: 20;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+/* 文字 */
+.title-40M {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.title-30 {
+  font-size: 30px;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+.text-20M {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.text-30L {
+  font-size: 30px;
+  font-weight: 300;
+}
+.text-40B {
+  font-size: 40px;
+  font: weight 700;
+}
+
+.remind-text {
+  font-weight: 300;
+  color: #ff5172;
+}
+
+/*  */
+
+.info-area {
+  justify-content: center;
+  /* padding: 0 1.5rem; */
+  margin: 3rem 0;
+}
+
+.text-infom {
+  margin: auto;
+  margin-left: 20px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 24px;
+}
+
+.shop-info {
+  margin-left: 35px;
+  margin-top: 24px;
+}
+
+.shop-info img {
+  width: 100%;
+}
+
+.small-calendar {
+  text-align: start;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 30px;
+}
+
+/* QRCODE modal */
+
+.qurcode-btn {
+  background-image: url(../img/Qrcode.png);
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 140px;
+  margin-top: 100px;
+}
+.qr-text {
+  margin-top: 24px;
+}
+
+.modal-content {
+  background-color: #141f2b;
+  /* height: 600px; */
+  border-radius: 10px;
+}
+
+.modal-footer,
+.modal-header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.close {
+  text-shadow: none;
+  opacity: 1;
+}
+.close span {
+  color: #ff8d00;
+}
+
+#qrcode-size {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.cancel-btn {
+  color: #fff;
+  background-color: #ff8d00;
+  border-radius: 12px;
+  height: 35px;
+  margin-top: 230px;
+  width: 60%;
+  border: none;
+  margin-left: 10px;
+}
+
+/*取消訂位 modal */
+
+.modal-content2 {
+  height: 400px;
+  width: 500px;
+  border: 10px solid #ff5172;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.modal-body2 img {
+  margin-top: 45px;
+}
+
+.modal-body2 p {
+  color: #ff5172;
+  margin-top: 10px;
+}
+
+.modal-body2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-dialog {
+  pointer-events: auto;
+}
+
+.m-btn {
+  color: #fff;
+  background-color: #ff5172;
+  border-radius: 12px;
+  height: 35px;
+  width: 100px;
+  border: none;
+  margin: 10px 15px;
+}
+
+.bgg {
+  background-color: transparent !important;
+}
+
+/* 裝飾點點 */
+.black-bg {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 730px;
+  margin-bottom: 200px;
+}
+
+.dots1 {
+  position: absolute;
+  bottom: -75px;
+  left: -75px;
+}
+.dots2 {
+  position: absolute;
+  top: -75px;
+  right: -75px;
+}
+
+/*  */
+
+@media (min-width: 768px) {
+  .phone {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .web {
+    display: none;
+  }
+
+  body {
+    background-image: none;
+  }
+
+  header {
+    height: 80px;
+  }
+
+  .title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .phone-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .remind-text {
+    font-size: 12px;
+    color: #ff5172;
+    margin-bottom: 0px;
+  }
+
+  .black-bg {
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 0px;
+    margin-bottom: 280px;
+  }
+
+  .info-area {
+    margin-top: 0px;
+  }
+
+  .shop-info {
+    margin-left: 0px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shop-name {
+    font-size: 24px;
+  }
+  .address,
+  .phone-number {
+    font-size: 14px;
+  }
+
+  .phone-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .small-calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 5px;
+  }
+
+  .text-infom {
+    margin: 0;
+  }
+
+  .qrcode {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .qurcode-btn {
+    background-image: url(../img/Qrcode.png);
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 140px;
+    margin-top: 30px;
+  }
+
+  .qr-text {
+    margin-top: 7px;
+  }
+
+  .cancel-btn {
+    margin-top: 20px;
+    height: 35px;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  /*modal  */
+
+  .modal-content2 {
+    height: 250px;
+    border: 5px solid #ff5172;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  .modaltitle {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .modal-body2 img {
+    margin-top: 15px;
+    width: 70%;
+  }
+  .warning {
+    margin-left: 55px;
+  }
+}

@@ -1,0 +1,228 @@
+#iconman {
+  width: 20px;
+  height: 20px;
+}
+button:focus {
+  outline: transparent;
+}
+body {
+  background-color: #141f2b;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+* {
+  font-family: "Noto Sans TC", sans-serif;
+}
+.signbg {
+  width: 100%;
+  height: 930px;
+  background-image: url(../img/singbgpc.png);
+  background-size: contain;
+  background-position: 0% center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.signathihgbox {
+  width: 100%;
+  height: 150px;
+}
+.singcard {
+  width: 460px;
+  height: 790px;
+  background-color: #002a4c;
+  border-radius: 15px;
+  position: absolute;
+  top: 50px;
+  right: 280px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  animation: move 1.5s ease-out;
+}
+@keyframes move {
+  0% {
+    right: 230px;
+  }
+  100% {
+    right: 280px;
+  }
+}
+.singcalong {
+  height: 810px;
+  transition: 0.3s;
+}
+.singlogo {
+  width: 120px;
+  margin: 40px auto;
+}
+.singlogo img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.singword1 {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+.signbycommunity {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.signline {
+  border: 0.5px solid white;
+  width: 80px;
+  height: 1px;
+  margin: 0 auto;
+}
+.signbycommunity p {
+  color: white;
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 10px;
+}
+.signcommunityicon {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.coloricon {
+  width: 50px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+.signaccount,
+.signpassword {
+  width: 83%;
+  height: 30px;
+  margin: 20px auto;
+}
+.signpassword {
+  margin-top: 40px;
+}
+.input-group {
+  width: 100%;
+  height: 40px;
+  border-bottom: 2px solid white;
+}
+.form-control {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+  font-weight: 100;
+}
+.form-control::placeholder {
+  color: white;
+  font-size: 16px;
+  font-weight: 100;
+}
+input:focus {
+  outline: transparent;
+}
+.btn-orange {
+  width: 83%;
+  height: 35px;
+  margin: 20px 38px 5px;
+  background-color: #fd8d00;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  border-radius: 12px;
+  border: none;
+}
+.member-text {
+  width: 80%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto 0;
+}
+
+.member-text p {
+  font-size: 16px;
+  font-weight: 100;
+}
+.abbmemberbtn {
+  width: 83%;
+  height: 35px;
+  margin: 20px 38px;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  border-radius: 12px;
+  border: 3px solid #fd8d00;
+}
+
+/* primary */
+
+.btn-secondary {
+  width: 360px;
+  margin: 0 auto;
+  background-color: #002a4c;
+  border: 3px solid #fd8d00;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+.password {
+  width: 23rem;
+  height: 30px;
+  margin: 1rem auto;
+}
+
+/*  */
+
+.err {
+  color: #ff5172;
+  position: absolute;
+  top: 12.5px;
+  right: 10px;
+}
+.err i {
+  color: #ff5172;
+}
+
+#errormsg {
+  width: 100%;
+  color: #ff5172;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#errormsg i {
+  color: #ff5172;
+}
+
+/* ----------------------RWD */
+
+@media screen and (max-width: 767px) {
+  .signbg {
+    height: 860px;
+    background-image: none;
+  }
+  .signathihgbox {
+    height: 80px;
+  }
+  .singcard {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+    animation: none;
+  }
+}

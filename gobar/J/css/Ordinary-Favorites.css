@@ -1,0 +1,188 @@
+/* * {
+  outline: 1px solid red;
+} */
+
+.header {
+  height: 120px;
+}
+
+main {
+  background-color: #141f2b;
+  background-image: url(../png/收藏店家-1.png);
+  background-image: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  height: 120px;
+}
+
+.goldline {
+  position: absolute;
+}
+
+#order {
+  background-color: #141f2b;
+  height: 1145px;
+}
+
+.footer {
+  height: 205px;
+  background-color: #002a4c;
+}
+
+.topname {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.topname1 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.topname1 p {
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.topname p {
+  width: 350px;
+  border-bottom: 5px solid orange;
+  margin: 0 auto;
+}
+
+.card1 {
+  height: 150px;
+  background-color: #022a4c;
+  align-items: center;
+  width: 378px;
+  margin: 0;
+}
+
+.card1 h2 {
+  color: white;
+  padding: 10px 0 0 10px;
+}
+
+.card1 p {
+  color: white;
+  margin-left: 10px;
+}
+
+.card2 {
+  margin-left: 1rem;
+}
+
+.svg {
+  position: absolute;
+  bottom: 10rem;
+}
+
+.cardmoney {
+  color: white;
+}
+
+.cardmoney img {
+  margin-left: 10px;
+}
+
+.cardmoney p {
+  color: white;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.cardmoney h1 {
+  color: white;
+  margin-right: 10px;
+}
+
+.bottom-text {
+  color: #e58c21;
+  padding-top: 30px;
+  width: 100px;
+  margin-left: 270px;
+}
+
+.bottom-text p {
+  width: 100px;
+  border: 1px solid #e58c21;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.card-area {
+  overflow-x: hidden;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 414px) {
+  .container-fluid {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .navbar {
+    height: 75px;
+  }
+
+  .card2 img {
+    margin-left: 0;
+  }
+
+  .bottom-text {
+    margin-left: 250px;
+  }
+
+  .container-fluid {
+    margin: 0;
+    margin-left: 20px;
+  }
+
+  .topname {
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  .topname1 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  .topname p {
+    width: 120px;
+    margin: 0 auto;
+  }
+
+  .topname1 p {
+    color: white;
+    width: 150px;
+    margin: 0 auto;
+    text-decoration: none;
+  }
+
+  .card-area {
+    padding-top: 50px !important;
+    overflow-y: none !important;
+    overflow: none !important ;
+    flex-direction: column;
+  }
+}

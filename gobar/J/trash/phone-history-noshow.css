@@ -1,0 +1,70 @@
+@media screen and (max-width: 414px) {
+  main {
+    background-image: none !important;
+  }
+
+  .mainblock {
+    width: 100% !important;
+  }
+
+  .navbar {
+    height: 75px;
+  }
+
+  .date-text {
+    font-size: 20px;
+  }
+
+  .photo {
+    display: none;
+  }
+
+  .topname p {
+    font-size: 20px;
+    width: 120px;
+  }
+
+  .card1 {
+    height: 169px;
+    position: relative;
+  }
+
+  .card2 {
+    padding: 20px 0 !important;
+  }
+
+  .name h1 {
+    font-size: 20px;
+    width: 200px;
+    margin: 10px 0;
+  }
+
+  .name {
+    width: 100% !important;
+    margin-bottom: 60px;
+    padding-left: 10px;
+  }
+
+  .name p {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .date {
+    width: 200px;
+    font-size: 20px;
+    margin-left: 1px;
+  }
+
+  .date svg {
+    width: 82px;
+    height: 82px;
+  }
+
+  .answer {
+    position: absolute;
+    bottom: 20px;
+    left: 1px;
+    z-index: 1;
+  }
+}

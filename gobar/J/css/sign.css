@@ -1,0 +1,158 @@
+/* * {
+  outline: 1px solid red;
+} */
+
+#iconman {
+  width: 20px;
+  height: 20px;
+}
+button:focus {
+  outline: transparent;
+  border: transparent;
+}
+.line {
+  border-bottom: 0.5px solid white;
+  width: 80px;
+  margin: 30px auto;
+}
+
+.modal-content {
+  width: 460px;
+  height: 790px;
+  background-color: #002a4c;
+  margin: 0 auto;
+}
+
+#exampleModalLabel {
+  margin: 0 auto;
+}
+
+.modal-header {
+  border: none;
+}
+
+.modal-sign {
+  margin-top: 1rem;
+}
+
+.modal-sign h3 {
+  color: white;
+  font-size: 30px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.icon {
+  justify-content: space-around;
+}
+
+.icon svg {
+  margin: 0 30px;
+}
+
+.sign-text p {
+  color: white;
+  font-size: 16px;
+  font-family: "Noto Sans TC", sans-serif;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.phone-number p {
+  color: white;
+  font-size: 16px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.input-group {
+  padding-top: 1rem;
+}
+
+.member-text {
+  color: white;
+  justify-content: space-between;
+}
+
+.member-text p {
+  padding: 10px 50px;
+}
+/* primary */
+.btn-orange {
+  width: 360px;
+  margin: 2rem auto;
+  background-color: #fd8d00;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+  border-radius: 12px;
+  color: white;
+}
+
+.btn-secondary {
+  width: 360px;
+  margin: 0 auto;
+  background-color: #002a4c;
+  border: 3px solid #fd8d00;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+.form-control {
+  background-color: #002a4c;
+  border: none;
+  border-bottom: 3px white;
+  width: 200px;
+  height: 40px;
+}
+
+.password {
+  width: 23rem;
+  height: 30px;
+  margin: 1rem auto;
+}
+
+.account {
+  width: 23rem;
+  height: 30px;
+  margin: 1rem auto;
+}
+
+.input-group input {
+  border-bottom: 1px solid white;
+}
+/*  */
+
+.err {
+  color: #ff5172;
+  position: absolute;
+  top: 12.5px;
+  right: 10px;
+}
+.err i {
+  color: #ff5172;
+}
+
+#errormsg {
+  color: #ff5172;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 auto;
+}
+
+#errormsg i {
+  color: #ff5172;
+}
+
+/* ----------------------RWD */
+
+@media screen and (max-width: 414px) {
+  .modal-content {
+    width: 400px;
+    height: 770px;
+  }
+}

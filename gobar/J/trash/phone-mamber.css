@@ -1,0 +1,48 @@
+@media screen and (max-width: 414px) {
+  .container-fluid {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .navbar {
+    height: 75px;
+  }
+
+  .card2 img {
+    margin-left: 0;
+  }
+
+  .bottom-text {
+    margin-left: 250px;
+  }
+
+  .container-fluid {
+    margin: 0;
+    margin-left: 20px;
+  }
+
+  .topname {
+    margin-top: 20px;
+  }
+
+  .topname1 {
+    margin-top: 20px;
+  }
+
+  .topname p {
+    width: 150px;
+    margin: 0;
+  }
+
+  .topname1 p {
+    width: 150px;
+    margin: 0;
+  }
+
+  .card-area {
+    padding-top: 50px !important;
+    overflow-y: hidden;
+    overflow: scroll;
+    flex-direction: column;
+  }
+}

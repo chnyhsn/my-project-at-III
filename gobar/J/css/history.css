@@ -1,0 +1,356 @@
+/* * {
+  outline: 1px solid red;
+} */
+
+.header {
+  height: 120px;
+}
+
+main {
+  background-color: #141f2b;
+  background-image: url(../png/我的訂單.png);
+  background-repeat: no-repeat;
+}
+
+.mainblock {
+  width: 75%;
+}
+
+#order {
+  background-color: #141f2b;
+  height: 1145px;
+}
+
+.navbar1 {
+  height: 150px;
+  background-color: #002a4c;
+}
+
+.footer {
+  height: 205px;
+  background-color: #002a4c;
+}
+
+.topname {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.topname p {
+  width: 350px;
+  border-bottom: 5px solid orange;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.topname1 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.topname1 a :hover {
+  text-decoration: none;
+  border-bottom: 5px solid orange;
+}
+
+.topname1 p {
+  width: 350px;
+  margin: 0 auto;
+  text-decoration: none;
+  color: white;
+}
+
+.card1 {
+  height: 282px;
+  background-color: #000;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.card2 {
+  height: 282px;
+  background-color: #000;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.card3 {
+  height: 282px;
+  background-color: #000;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.card4 {
+  height: 282px;
+  background-color: #000;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.date {
+  padding-left: 30px;
+  margin-left: 20px;
+}
+
+.date svg {
+  margin-left: 15px;
+}
+
+.date-text {
+  color: white;
+  font-size: 30px;
+  font-family: "Noto Sans TC", sans-serif;
+  padding-left: 30px;
+}
+
+.name {
+  color: white;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  margin-left: 5rem;
+}
+
+.name h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.name p {
+  margin-bottom: 10px;
+}
+
+.answer {
+  color: white;
+  display: flex;
+  padding: 200px 0 0 0;
+}
+
+#cancel-btn {
+  color: #ff8d00;
+  border: 1px solid #ff8d00;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  height: 30px;
+  margin: 0 20px;
+  padding: 0;
+}
+
+/* .textbox1 p {
+  color: #ff8d00;
+  border: 1px solid #ff8d00;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  height: 30px;
+  margin: 0 20px;
+} */
+
+.textbox2 {
+  background-color: #ff8d00;
+  width: 100px;
+  border-radius: 10px;
+  height: 30px;
+  text-align: center;
+  margin-left: 100px;
+}
+
+.textbox2 p {
+  color: white;
+  border: 1px solid #ff8d00;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none !important;
+}
+
+.card-area {
+  overflow-y: hidden;
+  /* overflow: scroll; */
+}
+
+/*取消訂位 modal */
+
+.modal-body2 p {
+  font-size: 30px;
+}
+
+.modal-content2 {
+  height: 400px;
+  width: 500px;
+  border: 10px solid #ff5172;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.modal-body2 img {
+  margin-top: 45px;
+}
+
+.modal-body2 p {
+  color: #ff5172;
+  margin-top: 10px;
+}
+
+.modal-body2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-dialog {
+  pointer-events: auto;
+}
+
+.m-btn {
+  color: #fff;
+  background-color: #ff5172;
+  border-radius: 12px;
+  height: 35px;
+  width: 100px;
+  border: none;
+  margin: 10px 15px;
+}
+
+.bgg {
+  background-color: transparent !important;
+}
+
+@media screen and (max-width: 414px) {
+  /*modal  */
+
+  .modal-content2 {
+    height: 250px;
+    border: 5px solid #ff5172;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  .modaltitle {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .modal-body2 img {
+    margin-top: 15px;
+    width: 70%;
+  }
+  .warning {
+    margin-left: 55px;
+  }
+
+  .header {
+    height: 80px;
+  }
+
+  main {
+    background-image: none !important;
+  }
+
+  .mainblock {
+    width: 100% !important;
+  }
+
+  .navbar {
+    height: 75px;
+  }
+
+  .date-text {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+
+  .photo {
+    display: none;
+  }
+
+  .topname p {
+    font-size: 20px;
+    width: 120px;
+  }
+
+  .topname1 {
+    margin-top: 40px;
+  }
+
+  .topname {
+    margin: 40px 0;
+  }
+
+  .topname1 p {
+    font-size: 20px;
+    width: 120px;
+  }
+
+  .card1 {
+    height: 169px;
+    position: relative;
+  }
+
+  .card2 {
+    height: 169px;
+    position: relative;
+  }
+
+  .card3 {
+    height: 169px;
+    position: relative;
+  }
+
+  .card4 {
+    height: 169px;
+    position: relative;
+  }
+
+  .card-area {
+    padding: 10px 0 !important;
+  }
+
+  .name h1 {
+    font-size: 20px;
+    width: 210px;
+    margin: 10px 0;
+  }
+
+  .name {
+    width: 100% !important;
+    margin-bottom: 60px;
+    padding-left: 30px;
+  }
+
+  .name p {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .date {
+    width: 200px;
+    font-size: 20px;
+    margin-left: 1px;
+  }
+
+  .date svg {
+    width: 82px;
+    height: 82px;
+    margin-left: 5px;
+  }
+
+  .answer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1;
+  }
+
+  .textbox2 {
+    margin-left: 125px;
+  }
+
+  .card-area {
+    overflow-y: none;
+    overflow: none;
+  }
+}

@@ -1,0 +1,109 @@
+body {
+  background-color: #141f2b;
+}
+.bubblelogo {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 185px;
+  z-index: -1;
+  animation: op 3.2s;
+}
+
+@keyframes op {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.bubblelogo img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.glass {
+  width: 100px;
+  height: 200px;
+  position: relative;
+  margin: 20px auto 0;
+}
+
+.glass .neck {
+  width: 100px;
+  height: 100px;
+  transform: translateY(-50px) rotateX(85deg);
+}
+
+.glass .water {
+  width: 100px;
+  height: 150px;
+  position: relative;
+  top: 50px;
+}
+
+.glass .water .bubble {
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  background-color: #fff;
+  position: absolute;
+  opacity: 0;
+}
+
+.glass .water .bubble:nth-child(1) {
+  top: 80%;
+  left: 105%;
+  animation: bubble 1s ease-in-out 1.6s infinite;
+}
+
+.glass .water .bubble:nth-child(2) {
+  top: 80%;
+  left: -20%;
+  animation: bubble 1s ease-in-out 0.4s infinite;
+}
+
+.glass .water .bubble:nth-child(3) {
+  top: 80%;
+  left: 40%;
+  animation: bubble 1s ease-in-out 0s infinite;
+}
+
+.glass .water .bubble:nth-child(4) {
+  top: 80%;
+  left: 15%;
+  animation: bubble 1s ease-in-out 0.8s infinite;
+}
+
+.glass .water .bubble:nth-child(5) {
+  top: 80%;
+  left: 71%;
+  animation: bubble 1s ease-in-out 1.2s infinite;
+}
+
+@keyframes bubble {
+  0% {
+    opacity: 0;
+    transform: scale(0.1, 0.1);
+    top: 80%;
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.4, 0.4);
+    top: 10%;
+  }
+}
