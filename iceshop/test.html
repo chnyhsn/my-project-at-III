@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('http://hazor.iki.fi/2003/juhannus/isot/DSCN9068-Maisema.jpg');
+            background-color: black;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            background-size: no-repeat fixed center center cover;
+            overflow: hidden;
+        }
+
+        .content-box {
+            position: relative;
+            width: 300px;
+            overflow: hidden;
+        }
+
+        .content-bg {
+            position: absolute;
+            background-size: cover;
+            background-image: url('http://hazor.iki.fi/2003/juhannus/isot/DSCN9068-Maisema.jpg');
+            background-color: black;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            background-size: no-repeat fixed center center cover;
+            filter: blur(10px);
+            -webkit-filter: blur(10px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-box">
+        <div class="content-bg"></div>
+        <div class="content">
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        function updateBackground() {
+            var contentBox = $(".content-box");
+            var bg = $(".content-bg");
+            bg.css("left", -(contentBox.offset().left));
+            bg.css("top", -(contentBox.offset().top));
+            bg.width($(window).width());
+            bg.height($(window).height());
+        }
+
+        $(window).resize(function () {
+            updateBackground();
+        });
+
+        updateBackground();
+    </script>
+</body>
+
+</html>

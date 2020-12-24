@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="./imgs/favicon02.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>福興號百年冰店</title>
+    <style>
+        /* * {
+            outline: 1px solid red;
+        } */
+
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            margin: 80px 0 5px 0;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            background: rgb(219, 219, 219);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            cursor: url(./imgs/shaveice01-cartoon-100px.png), auto;
+        }
+
+        .navbar {
+            transition: 1s;
+        }
+
+        .navbar.hide {
+            transform: translateY(-60px);
+        }
+
+        .bg {
+            width: 100%;
+            height: 100vh;
+            background: url(/imgs/yen01.jpg)center center;
+            background-size: cover;
+            position: relative;
+            opacity: 0.8;
+            background-attachment: fixed;
+        }
+
+        .back {
+            position: absolute;
+            top: 650px;
+            right: 150px;
+            position: fixed;
+        }
+
+        .map {
+            width: 600px;
+            height: 500px;
+            margin: 0 auto;
+            top: 100px;
+            right: 250px;
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.5);
+            align-content: center;
+            text-align: center;
+            width: 350px;
+            left: 1100px;
+            bottom: 200px;
+        }
+
+        .content p {
+            font-size: 20px;
+            /* display: flex;
+            flex-direction: column; */
+            text-align: center;
+            line-height: 25px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light  fixed-top justify-content-end">
+        <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end text-right" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            width="32" height="32" viewBox="0 0 32 32" style="fill:#fff;opacity: 0.8;">
+                            <title>home</title>
+                            <path
+                                d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z">
+                            </path>
+                        </svg><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html#products">PRODUCTS<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html#story">STORY<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html#location">LOCATION<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="bg">
+                    <div class="map col-12 col-sm-3 col-md-6 col-lg-9">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.078025956146!2d120.28950871480293!3d23.130823084898367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7b872cd1d739%3A0x18fd8513b7943964!2z5ZaE5YyW57Sg6aOf6aSo!5e0!3m2!1szh-TW!2stw!4v1603347394173!5m2!1szh-TW!2stw"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="content col">
+                        <div class="location d-flex">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 32 32" class="mr-2">
+                                <title>location</title>
+                                <path
+                                    d="M16 0c-5.523 0-10 4.477-10 10 0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zM16 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z">
+                                </path>
+                            </svg>
+                            <p>台南市善化區中和街9號</p>
+                        </div>
+                        <div class="phone d-flex">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 32 32" class="mr-2">
+                                <title>phone</title>
+                                <path
+                                    d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z">
+                                </path>
+                            </svg>
+                            <p>
+                                +88665819009
+                            </p>
+                        </div>
+                        <div class="time d-flex">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 32 32" class="mr-2">
+                                <title>clock</title>
+                                <path
+                                    d="M20.586 23.414l-6.586-6.586v-8.828h4v7.172l5.414 5.414zM16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 28c-6.627 0-12-5.373-12-12s5.373-12 12-12c6.627 0 12 5.373 12 12s-5.373 12-12 12z">
+                                </path>
+                            </svg>
+                            <p>06:00-14:00</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <a href="/index.html"><button type="button" class="btn btn-outline-light">BACK >></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        let scrollLast = 0;
+
+
+        $(window).scroll(function () {
+            let scrollNow = $(this).scrollTop();
+            if (scrollLast < scrollNow) {
+                $('.navbar').addClass('hide');
+            }
+            else {
+                $('.navbar').removeClass('hide');
+            }
+
+            scrollLast = scrollNow;
+
+        })
+
+
+
+    </script>
+</body>
+
+</html>

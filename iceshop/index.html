@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="./imgs/favicon02.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>福興號百年冰店</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <style>
+        /* * {
+            outline: 1px solid red;
+        } */
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            margin: 80px 0 5px 0;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            background: rgb(219, 219, 219);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            overflow-x: hidden;
+            cursor: url(./imgs/shaveice01-cartoon-100px.png), auto;
+
+
+        }
+
+        /* navbar */
+        .navbar {
+            transition: 1s;
+        }
+
+        .navbar.hide {
+            transform: translateY(-60px);
+        }
+
+        /* 首頁 */
+        .logo img {
+            opacity: 1;
+            width: 300px;
+            margin: 0 auto;
+
+        }
+
+        .bg {
+            width: 100%;
+            height: 960px;
+            background: url(/imgs/yen01.jpg)center center;
+            background-size: cover;
+            position: relative;
+            opacity: 0.8;
+        }
+
+        .copywrite {
+            color: white;
+            top: 400px;
+            /* left: 150px; */
+            position: absolute;
+            transition: 1s ease-in;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+        .copywrite p {
+            font-size: 20px;
+            line-height: 40px;
+        }
+
+        .copywrite.move-up {
+            transform: translateY(-200px);
+        }
+
+        .readmore {
+            position: absolute;
+            top: 900px;
+            right: 100px;
+        }
+
+        /* scrolldown */
+        .scrolldown {
+            writing-mode: vertical-rl;
+            color: grey;
+            position: absolute;
+            top: 550px;
+            right: 10px;
+            position: fixed;
+        }
+
+
+
+        .banner-left {
+            height: 100vh;
+            background-color: #FFCAC4;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .banner-text-area {
+            margin-left: 40px;
+            transform: translateY(50px);
+            transition: .8s ease-out;
+        }
+
+        .banner-text-area.move-up {
+            transform: translateY(-100px);
+        }
+
+        p {
+            font-size: 4rem;
+            line-height: 3rem;
+        }
+
+        .halo-text {
+            color: transparent;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: tomato;
+        }
+
+        .banner-slider-area {
+            height: 100vh;
+        }
+
+        .banner-slider-area {
+            background-color: #FFF6DD;
+        }
+
+        .slider1 {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .slider-img-wrap {
+            width: 100%;
+        }
+
+        .slider-img-wrap img {
+            width: 100%;
+
+        }
+
+        /* 第二頁 */
+        .row.season {
+            background-color: #FFCAC4;
+        }
+
+        .accordion {
+            width: 90%;
+            /* max-width: 1080px; */
+            height: 700px;
+            overflow: hidden;
+            margin: 0px 10px;
+            background-color: #FFCAC4;
+
+        }
+
+        .accordion ul {
+            width: 100%;
+            display: table;
+            table-layout: fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        .accordion ul li {
+            display: table-cell;
+            vertical-align: bottom;
+            position: relative;
+            width: 16.666%;
+            height: 700px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            transition: all 1s ease-in-out;
+            /* clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%); */
+        }
+
+
+        .accordion ul li div {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+
+        }
+
+        .accordion ul li div .btn {
+            display: block;
+            height: 700px;
+            width: 100%;
+            position: relative;
+            z-index: 3;
+            padding: 10px 40px;
+            /* box-sizing: border-box; */
+            /* color: #fff; */
+            text-decoration: none;
+            transition: all 1s ease-in-out;
+            text-align: left;
+
+        }
+
+        .accordion ul li div .btn.spring {
+            background: url(./imgs/spring.png) no-repeat center;
+            background-color: rgba(255, 255, 255, .6);
+            width: 100%;
+
+        }
+
+        .accordion ul li div .btn.summer {
+            background: url(./imgs/summer.png) no-repeat center;
+            background-color: rgba(255, 255, 255, .6);
+            width: 100%;
+
+        }
+
+        .accordion ul li div .btn.autumn {
+            background: url(./imgs/autumn.png) no-repeat center;
+            background-color: rgba(255, 255, 255, .6);
+            width: 100%;
+
+        }
+
+        .accordion ul li div .btn.winter {
+            background: url(./imgs/winter.png) no-repeat center;
+            background-color: rgba(255, 255, 255, .6);
+            width: 100%;
+
+        }
+
+        .accordion ul li div .btn .content {
+            opacity: 0;
+            margin: 0;
+            width: 100%;
+            text-overflow: ellipsis;
+            position: relative;
+            /* z-index: 5; */
+            white-space: nowrap;
+            overflow: hidden;
+            /* -webkit-transform: translateX(-20px);
+            transform: translateX(-20px); */
+            -webkit-transition: all 400ms ease;
+            transition: all 400ms ease;
+        }
+
+        .accordion ul li div .btn h2 {
+            text-overflow: clip;
+            font-size: 100px;
+            margin-bottom: 2px;
+            font-family: 'Staatliches', cursive;
+            font-weight: 800;
+            text-align: center;
+            margin-top: 210px;
+            color: #eb2f67;
+        }
+
+        .accordion ul li div .btn p {
+            font-size: 16px;
+            /* color: #000; */
+        }
+
+        /* .accordion ul li div .btn a {
+            font-size: 13.5px;
+            background-color: #000;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #3AEFB9;
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: 600;
+        } */
+
+        .accordion ul li div .btn a:hover {
+            background-color: #FFCAC4;
+            /* color: #000; */
+        }
+
+        .accordion ul li:nth-child(1) {
+            background-image: url("./imgs/spring04.jpg");
+
+        }
+
+        .accordion ul li:nth-child(2) {
+            background-image: url("./imgs/shaveice05.jpg");
+        }
+
+        .accordion ul li:nth-child(3) {
+            background-image: url("./imgs/mochi01.jpg");
+        }
+
+        .accordion ul li:nth-child(4) {
+            background-image: url("./imgs/yen05.jpg");
+        }
+
+
+        .accordion ul:hover li,
+        .accordion ul:focus-within li {
+            width: 8%;
+            border-right: solid 2px #FFCAC4;
+            /* clip-path: polygon(93% 0, 100% 50%, 93% 100%, 0% 100%, 0 50%, 0% 0%); */
+        }
+
+        .accordion ul li:focus {
+            outline: none;
+        }
+
+        .accordion ul:hover li:hover,
+        .accordion ul li:focus,
+        .accordion ul:focus-within li:focus {
+            width: 60%;
+            border-right: 0;
+            clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 0 50%, 0% 0%);
+        }
+
+
+
+        .accordion ul:hover li:hover .btn .content,
+        .accordion ul li:focus .btn .content,
+        .accordion ul:focus-within li:focus div.btn .content {
+            opacity: 1;
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        .accordion ul:hover li {
+            width: 8% !important;
+            clip-path: inset(0 0 0 0);
+        }
+
+
+
+        .accordion ul:hover li:hover {
+            width: 60% !important;
+        }
+
+        .accordion ul:hover li:hover .btn {
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        /* @media screen {
+
+            .accordion ul:hover li:hover {
+                width: 100% !important;
+            }
+
+            .accordion ul:hover li:hover,
+            .accordion ul li:focus,
+            .accordion ul:focus-within li:focus {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                margin: 0;
+            }
+
+            .accordion {
+                height: auto;
+            }
+
+            .accordion ul li,
+            .accordion ul li:hover,
+            .accordion ul:hover li,
+            .accordion ul:hover li:hover {
+                position: relative;
+                display: table;
+                table-layout: fixed;
+                width: 100%;
+                -webkit-transition: none;
+                transition: none;
+            }
+        } */
+
+        /* .accordion ul:hover li:hover .btn .content {
+            opacity: 1 !important;
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        } */
+
+        /* .fancybox-content {
+            width: 650px;
+        } */
+        /* 第三頁carousel */
+
+        .slider {
+
+            background: rgba(240, 240, 240, .5);
+            width: 900px;
+            justify-content: center;
+            margin: 70px 50px;
+
+        }
+
+
+        .slider div {
+            position: relative;
+            padding-top: 56.25%;
+        }
+
+        .slider iframe {
+            position: absolute;
+            top: .5%;
+            left: .5%;
+            width: 99%;
+            height: 99%;
+        }
+
+
+        .slider a {
+            /* вид кнопок */
+            display: inline-block;
+            padding: 0 .5em;
+            text-decoration: none;
+            color: #D3B6E0;
+            justify-content: center;
+        }
+
+        .slider a:visited {
+
+            color: rgb(204, 204, 203);
+        }
+
+        .slider a:hover {
+
+            transform: scale(1.5);
+        }
+
+        .slider a:not(:active):focus {
+
+            pointer-events: none;
+        }
+
+        .slider a::before {
+
+            content: "\25cf";
+            position: absolute;
+            color: rgba(0, 0, 1, .1);
+            transition: color 0s 9999999s;
+
+        }
+
+        .slider a:nth-of-type(1)::before {
+
+            color: #FFD8B9;
+        }
+
+        .slider span:active a::before {
+
+            color: rgba(0, 0, 0, 0);
+            transition: color 0s;
+        }
+
+        .slider span:active a:nth-of-type(1)::before {
+
+            color: #ccc;
+            transition: color 0s;
+        }
+
+        .slider span:active a:active::before {
+
+            color: #FFD8B9;
+            transition: color 0s;
+        }
+
+        .full-bg {
+            background: url(./imgs/bg.png);
+            background-attachment: fixed;
+
+        }
+
+        /* 夾頁 */
+        .full-color {
+            background-color: #FFCAC4;
+            width: 100%;
+            height: 250px;
+            background-attachment: fixed;
+        }
+
+        .full-color h2 {
+            color: #eb2f67;
+            text-align: center;
+            font-size: 60px;
+            font-family: 'Fascinate', cursive;
+            margin-left: 20px;
+            margin-top: 100px;
+
+        }
+
+        .full-color h1 {
+            font-size: 120px;
+            font-family: 'Fascinate', cursive;
+            color: white;
+            text-shadow: black;
+            text-align: center;
+            margin-top: 30px;
+
+        }
+
+        .season {
+            left: 200px;
+        }
+
+        /* 夾頁 */
+        .box1,
+        .box2,
+        .box3,
+        .box4 {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-top: 50px;
+            margin-right: 50px;
+            justify-content: center;
+        }
+
+        .box1 img,
+        .box2 img,
+        .box3 img,
+        .box4 img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .bigbox {
+            margin: 0 auto;
+            display: flex;
+
+        }
+
+        /* 第五頁 */
+        .footer-bg {
+            background-color: #856B57;
+        }
+
+        .map {
+            width: 600px;
+            height: 500px;
+            margin-top: 50px;
+        }
+
+        .content {
+            /* background-color: rgba(255, 255, 255, 0.5); */
+            align-content: center;
+            margin-top: 200px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .content p {
+            font-size: 20px;
+            /* display: flex;
+            flex-direction: column; */
+            text-align: center;
+            line-height: 25px;
+
+
+        }
+
+        footer {
+            background-color: #856B57;
+            width: 100%;
+            height: 180px;
+        }
+
+        .line {
+            width: 35px;
+            height: 35px;
+        }
+
+        .others a {
+            color: rgb(36, 34, 34);
+
+        }
+
+        .others {
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .socialicon {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        footer p {
+            text-align: center;
+            font-size: 16px !important;
+        }
+
+        .fixed-button {
+            background-color: #FFD8B9;
+            color: black;
+            border: none;
+            outline: none;
+            position: fixed;
+            bottom: 0px;
+            right: 15px;
+            height: 50px;
+            width: 50px;
+            margin-bottom: 20px;
+            border-radius: 30px;
+            box-shadow: 1px 3px 5px #888888;
+            opacity: 0;
+        }
+
+        @keyframes wobble {
+            16.65% {
+                -webkit-transform: translateY(8px);
+                -ms-transform: translateY(8px);
+                transform: translateY(8px);
+            }
+
+            33.3% {
+                -webkit-transform: translateY(-6px);
+                -ms-transform: translateY(-6px);
+                transform: translateY(-6px);
+            }
+
+            49.95% {
+                -webkit-transform: translateY(4px);
+                -ms-transform: translateY(4px);
+                transform: translateY(4px);
+            }
+
+            66.6% {
+                -webkit-transform: translateY(-2px);
+                -ms-transform: translateY(-2px);
+                transform: translateY(-2px);
+            }
+
+            83.25% {
+                -webkit-transform: translateY(1px);
+                -ms-transform: translateY(1px);
+                transform: translateY(1px);
+            }
+
+            100% {
+                -webkit-transform: translateY(0);
+                -ms-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+
+        .wobble {
+            -webkit-animation-name: wobble;
+            animation-name: wobble;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+        }
+    </style>
+    <link rel="stylesheet" href="./rwd-iphone.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light  fixed-top justify-content-end">
+        <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end text-right" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                            style="fill:#fff;opacity: 0.8;">
+                            <title>home</title>
+                            <path
+                                d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z">
+                            </path>
+                        </svg>
+                        <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">PRODUCTS<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#story">STORY<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#location">LOCATION<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 首頁 -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="bg" id="home">
+                    <div class="logo">
+                        <img src="./imgs/logo.svg" alt="">
+                    </div>
+                    <div class="copywrite col-sm-1 col-md-4 col-lg-4">
+                        <h1>愛はみえる。</h1>
+                        <p>
+                            「大切なことは 、目に見えない」
+                            <br><br>
+                            一碗冰對你來說的意義是什麼
+                            <br>
+                            是愛、是分享、是感受
+                            <br>
+                            是夏日大汗淋漓後，讓身心都降溫的聖品
+                            <br>
+                            是一家人共同渡過的歡樂時光
+                            <br><br>
+                            一碗冰讓你想起的回憶是什麼
+                            <br>
+                            蟬聲唧唧的午後、打球後的炙熱
+                            <br>
+                            爸爸的疼惜偷偷帶你去吃的冰
+                            <br>
+                            考了滿分阿嬤的獎賞
+                            <br><br>
+                            一碗冰帶來的不只是生津止渴、與酷暑戰鬥
+                            <br>
+                            更是為一代代的人延續了心中的愛
+                            <br>
+                            這就是為什麼我們共同聚集在這裡
+                            <br>
+                            一起創造由傳統刨冰所構成的愛的世界
+                        </p>
+                    </div>
+                    <div class="readmore">
+                        <a href="/readmore.html"><button type="button" class="btn btn-outline-light">READ
+                                MORE..</button></a>
+                    </div>
+                    <div class="scrolldown">
+                        SCROLL DOWN >>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- 夾頁 -->
+    <section class="full-color d-flex justify-content-center">
+        <div class="season">
+            <h1>SEASON</h1>
+        </div>
+        <div class="season">
+            <h2>season</h2>
+        </div>
+
+    </section>
+    <!-- 第二頁 -->
+    <section>
+        <div class="container-fluid ">
+            <div class="row season">
+                <div class="accordion col" id="products">
+                    <ul>
+                        <li tabindex="1">
+                            <div>
+                                <div class="btn spring">
+
+                                    <div class="content">
+                                        <h2>年粿</h2>
+                                        <p>逢年過節，台灣人必吃年粿 <br>
+                                            除了傳統的發粿、鹹粿及甜粿之外，福興號更研發了最新的抹茶、黑糖、花生口味<br>
+                                            純米磨製，絕無添加粉</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li tabindex="2">
+                            <div>
+                                <div class="btn summer">
+
+                                    <div class="content">
+                                        <h2>刨冰</h2>
+                                        <p>每逢夏日，必吃涼品<br>
+                                            有別於一般的水果冰品，傳統配料不只讓你消暑更能吃飽<br>
+                                            純手工製作，食安我把關</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li tabindex="3">
+                            <div>
+                                <div class="btn autumn">
+
+                                    <div class="content">
+                                        <h2>麻糬</h2>
+                                        <p>善化獨有習俗，中秋節拜麻糬<br>
+                                            一家烤肉萬家香，善化麻糬QQㄆㄤ<br>
+                                            沒有麻糬的秋天，就不像秋天了</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li tabindex="4">
+                            <div>
+                                <div class="btn winter">
+                                    <div class="content">
+                                        <h2>湯圓</h2>
+                                        <p>雖然台南冬天很短，但還是有寒冷的時候<br>
+                                            一碗熱熱的湯圓、燒仙草，暖手暖胃又暖心<br>
+                                            讓你一年四季都能享有福興號的美味</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- 夾頁 -->
+    <section class="full-color">
+        <div class="container">
+            <div class="row">
+                <div class="bigbox">
+                    <div class="box1">
+                        <img src="./imgs/shaveice02-cartoon.png" alt="">
+                    </div>
+                    <div class="box2">
+                        <img src="./imgs/shaveice03-cartoon.png" alt="">
+                    </div>
+                    <div class="box3">
+                        <img src="./imgs/spring04-cartoon.png" alt="">
+                    </div>
+                    <div class="box4">
+                        <img src="./imgs/spring06-cartoon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 第三頁 -->
+    <section class="full-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-6 col-sm-1 col-1" id="story">
+                    <div class="slider">
+                        <div>
+                            <iframe src="https://www.youtube.com/embed/EqABqFqHfh8" allowfullscreen frameborder="0"
+                                name="slider">
+                            </iframe>
+                        </div>
+                        <span>
+                            <a href="https://www.youtube.com/embed/EqABqFqHfh8" target="slider">●
+                            </a>
+                            <a href="https://www.youtube.com/embed/4lkcKXRgijQ" target="slider">●
+                            </a>
+                            <a href="https://www.youtube.com/embed/3Q-mldDiaxg" target="slider">●
+                            </a>
+                            <a href="https://www.youtube.com/embed/MPz4S47UT_U" target="slider">●
+                            </a>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+    <!-- 第四頁 -->
+    <section class="footer-bg">
+        <div class="container">
+            <div class="row col-12">
+                <div class="map col h-100" id="location">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.0521776875867!2d120.28931061480289!3d23.131767984897955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7b80b3598a71%3A0x55bc2d0a59b9356f!2z56aP6IiI6Jmf6JiH5a6255m-5bm05Yaw5bqX!5e0!3m2!1szh-TW!2stw!4v1603189722651!5m2!1szh-TW!2stw"
+                        width="550" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="content col">
+                    <div class="location d-flex">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                            class="mr-2">
+                            <title>location</title>
+                            <path
+                                d="M16 0c-5.523 0-10 4.477-10 10 0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zM16 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z">
+                            </path>
+                        </svg>
+                        <p>台南市善化區中山路377號（善化市場）店11</p>
+                    </div>
+                    <div class="phone d-flex">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                            class="mr-2">
+                            <title>phone</title>
+                            <path
+                                d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z">
+                            </path>
+                        </svg>
+                        <p>
+                            +88665818504
+                        </p>
+                    </div>
+                    <div class="time d-flex">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                            class="mr-2">
+                            <title>clock</title>
+                            <path
+                                d="M20.586 23.414l-6.586-6.586v-8.828h4v7.172l5.414 5.414zM16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 28c-6.627 0-12-5.373-12-12s5.373-12 12-12c6.627 0 12 5.373 12 12s-5.373 12-12 12z">
+                            </path>
+                        </svg>
+                        <p>06:00-16:00</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="link mt-5 mx-auto">
+                    <div class="socialicon">
+                        <a href="https://www.facebook.com/ShanHuaFuXingHaoCuoBing"><svg version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                class="mr-3">
+                                <title>facebook2</title>
+                                <path
+                                    d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h13v-14h-4v-4h4v-2c0-3.306 2.694-6 6-6h4v4h-4c-1.1 0-2 0.9-2 2v2h6l-1 4h-5v14h9c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3z">
+                                </path>
+                            </svg></a>
+                        <a href="https://www.instagram.com/explore/locations/327352018/?hl=zh-tw"><svg version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                class="mr-3">
+                                <title>instagram</title>
+                                <path
+                                    d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z">
+                                </path>
+                                <path
+                                    d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z">
+                                </path>
+                                <path
+                                    d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z">
+                                </path>
+                            </svg></a>
+                        <a
+                            href="https://timeline.line.me/user/_dc9TW-K9L4lpFZsHNz3TCvMmqrQN9F1fZ5GhW4w?utm_medium=windows&utm_source=desktop&utm_campaign=OA_Profile"><img
+                                src="./imgs/line.png" alt="" class="line"></a>
+                    </div>
+                    <div class="others">
+                        <a href="./othershop.html">相關企業</a>
+                        <a href="./menu.html">菜單</a>
+                        <a href="./safe.html">食安認證</a>
+                    </div>
+                    <p>Copyright ©2020 EC. All rights reserved.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <button class="fixed-button wobble" onclick="hello()" type="button">
+        CALL
+    </button>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        let scrollLast = 0;
+
+
+        $(window).scroll(function () {
+            let scrollNow = $(this).scrollTop();
+            if (scrollLast < scrollNow) {
+                $('.navbar').addClass('hide');
+            }
+            else {
+                $('.navbar').removeClass('hide');
+            }
+
+            scrollLast = scrollNow;
+
+        })
+
+        $(window).on('scroll', function () {
+            let scrollTop = $(this).scrollTop();
+            console.log('scroll top:', $(this).scrollTop())
+            if (scrollTop > 0) {
+
+                $('.copywrite').addClass('move-up')
+            }
+            else {
+                $('.copywrite').removeClass('move-up')
+            }
+            if (scrollTop > 400) {
+                $('.scrolldown').css('opacity', '0')
+            }
+            else {
+                $('.scrolldown').css('opacity', '1')
+            }
+            if (scrollTop < 1300) {
+                $('.fixed-button').css('opacity', '0')
+            }
+            else {
+                $('.fixed-button').css('opacity', '1')
+            }
+        })
+        function hello() {
+            alert('06 581 8504');
+        }
+
+    </script>
+</body>
+
+</html>
